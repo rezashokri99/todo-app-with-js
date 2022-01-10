@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>To Do List</h2>
+    </header>
+    <main>
+        <div class="container">
+            <form class="container-form">
+                <input type="text" class="input-todo">
+                <button type="submit" class="save-todo"><i class="fas fa-plus-circle"></i></button>
+            </form>
+            <div class="select">
+                <select class="filter-todos">
+                    <option class="all" value="all">all</option>
+                    <option class="completed" value="completed">completed</option>
+                    <option class="uncompleted" value="uncompleted">uncompleted</option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <ul class="todo-container">
+                
+            </ul>
+        </div>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+</body>
+
+</html>

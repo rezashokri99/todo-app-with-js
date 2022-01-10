@@ -1,0 +1,246 @@
+/* all tags */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+/* give style to body */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+
+/* header tag */
+header {
+  margin: 70px 0 40px;
+}
+
+/* give style to the container */
+.container {
+  display: flex;
+  align-items: center;
+  width: 40rem;
+  justify-content: center;
+}
+
+/* input value */
+.container-form {
+  box-shadow: 5px 5px 10px rgb(226, 226, 226), 5px -5px 15px rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 7px;
+  margin-right: 5px;
+}
+
+/* input tag */
+.container-form input {
+  width: 20em;
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+}
+
+/* save btn value */
+.container-form button {
+  border: none;
+  outline: none;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+/* save btn value */
+.fa-plus-circle {
+  color: #1e1af3;
+}
+
+/* filter todos */
+.filter-todos {
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  box-shadow: 5px 5px 10px rgb(226, 226, 226), 5px -5px 15px rgb(226, 226, 226);
+  border-radius: 10px;
+  padding: 9px;
+  margin-right: 5px;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  width: 8rem;
+  position: relative;
+  appearance: none;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #1e1af3;
+}
+
+
+.select {
+  position: relative;
+}
+
+/* arrow icon for filter todos */
+.select::after {
+  content: "\2B9F";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.3rem;
+  margin-right: 0.6rem;
+  color: #1e1af3;
+  pointer-events: none;
+}
+
+
+/* tag all todo  */
+.todo-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* one todo */
+.todo {
+  background-color: #78c9ff;
+  width: 17.3rem;
+  margin-left: 6.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin-bottom: 3px;
+}
+
+/* completed btn for todo */
+.todo .fa-check-square {
+  color: #1e1af3;
+  cursor: pointer;
+}
+
+/* trash btn for todo */
+.todo .fa-trash-alt {
+  color: #f73b54;
+  cursor: pointer;
+}
+
+
+/* class completed */
+.completed {
+  opacity: 0.5;
+}
+/* class completed  */
+.completed li {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  main {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form {
+    width: 200px;
+    display: flex;
+    position: relative;
+  }
+  .save-todo {
+    position: absolute;
+    right: 5px;
+  }
+  .filter-todos {
+    width: 7rem;
+  }
+  .todo {
+    width: 11.3rem;
+    margin-left: 0;
+    margin-right: 7.9rem;
+  }
+}
+
+@media only screen and (min-width: 481px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  main {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form {
+    width: 230px;
+    display: flex;
+    position: relative;
+    margin-right: 0;
+  }
+  .save-todo {
+    position: absolute;
+    right: 5px;
+  }
+  .filter-todos {
+    width: 7rem;
+  }
+  .todo {
+    width: 13.3rem;
+    margin-left: 0;
+    margin-right: 7.5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  main {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form {
+    width: 350px;
+    display: flex;
+    position: relative;
+    margin-right: 0;
+  }
+  .save-todo {
+    position: absolute;
+    right: 5px;
+  }
+  .filter-todos {
+    width: 7.2rem;
+  }
+  .todo {
+    width: 20.5rem;
+    margin-left: 0;
+    margin-right: 7.6rem;
+  }
+}
